@@ -3,96 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Domine a comunicação com IAs! Aprenda Engenharia de Prompt com este guia essencial e bônus exclusivos.">
+  <meta name="description" content="Aprenda Engenharia de Prompt e domine a comunicação com Inteligências Artificiais. Ebook completo, bônus exclusivos, garantia e depoimentos reais.">
+  <meta name="keywords" content="Engenharia de Prompt, ChatGPT, IA, Inteligência Artificial, Ebook, Prompt Engineering, Aprender IA, Marketing Digital, Automação, Copywriting">
+  <meta name="author" content="Seu Nome ou Marca">
+  <meta property="og:title" content="Engenharia de Prompt | Domine a Comunicação com IAs">
+  <meta property="og:description" content="O guia definitivo para dominar prompts e obter resultados épicos com Inteligências Artificiais.">
+  <meta property="og:image" content="https://i.ibb.co/HD5kYCKz/Chat-GPT-Image-21-de-jul-de-2025-14-27-55.png">
+  <meta property="og:type" content="website">
   <title>Engenharia de Prompt | Domine a Comunicação com IAs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" />
   <style>
     :root {
       --primary: #00ff88;
       --secondary: #00c3ff;
+      --accent: #fff700;
       --dark-bg: #181c24;
-      --glass: rgba(20, 20, 30, 0.85);
-      --radius: 18px;
-      --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      --glass: rgba(20, 20, 30, 0.92);
+      --radius: 20px;
+      --shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.37);
     }
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+      background: radial-gradient(ellipse at top left, #00ff88 0%, #2c5364 100%), linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
       color: #fff;
       min-height: 100vh;
-    }
-    .topbar {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: rgba(20, 20, 30, 0.95);
-      box-shadow: 0 2px 12px #00ff8822;
-      z-index: 100;
+      width: 100vw;
+      overflow-x: hidden;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      padding: 10px 24px;
-      border-bottom: 1.5px solid #00ff88;
-    }
-    .topbar h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.3rem;
-      color: var(--primary);
-      margin: 0;
-      letter-spacing: 1px;
-      text-shadow: 0 0 8px #00ff8899;
-    }
-    .topbar .cta-button {
-      margin: 0;
-      font-size: 1rem;
-      padding: 10px 22px;
     }
     .container {
-      max-width: 900px;
-      margin: 80px auto 40px auto;
-      padding: 48px 20px;
+      width: 100%;
+      max-width: 1050px;
+      margin: 48px auto 48px auto;
+      padding: 56px 32px;
       background: var(--glass);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border: 1.5px solid rgba(255,255,255,0.18);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     h1, h2 {
       font-family: 'Montserrat', sans-serif;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
+      text-align: center;
     }
     h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       color: var(--primary);
-      text-shadow: 0 0 18px #00ff8899;
-      margin-bottom: 10px;
+      text-shadow: 0 0 24px #00ff8899, 0 2px 0 #222;
+      margin-bottom: 14px;
+      font-weight: 900;
+      line-height: 1.1;
     }
     h2 {
-      font-size: 1.6rem;
-      margin-top: 36px;
+      font-size: 1.7rem;
+      margin-top: 38px;
       color: var(--primary);
+      font-weight: 700;
+      text-shadow: 0 0 8px #00ff8899;
     }
     .hero {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
+      width: 100%;
     }
     .hero img {
-      width: 260px;
-      margin: 24px 0 12px 0;
-      border-radius: 16px;
-      box-shadow: 0 0 32px #00ff8899;
+      width: 280px;
+      max-width: 95vw;
+      margin: 28px 0 16px 0;
+      border-radius: 20px;
+      box-shadow: 0 0 48px #00ff8899, 0 0 12px #fff70044;
       background: #222;
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 3px solid var(--accent);
     }
     .hero img:hover {
-      transform: scale(1.04) rotate(-2deg);
+      transform: scale(1.06) rotate(-2deg);
+      box-shadow: 0 0 64px #00ff88cc, 0 0 24px #fff70088;
     }
     .preco {
       font-size: 2.5rem;
@@ -102,169 +100,268 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       font-weight: bold;
-      margin-top: 8px;
-      letter-spacing: 1px;
-      text-shadow: 0 0 8px #00ff8899;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      letter-spacing: 1.5px;
+      text-shadow: 0 0 12px #00ff8899;
       animation: pulse 2s infinite;
     }
     @keyframes pulse {
-      0%, 100% { text-shadow: 0 0 8px #00ff8899; }
-      50% { text-shadow: 0 0 24px #00ff88cc; }
+      0%, 100% { text-shadow: 0 0 12px #00ff8899; }
+      50% { text-shadow: 0 0 32px #fff700cc; }
     }
     .cta-button {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      margin-top: 28px;
-      padding: 18px 36px;
-      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+      gap: 12px;
+      margin-top: 32px;
+      padding: 20px 44px;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
       color: #111;
-      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
       text-decoration: none;
-      font-size: 1.25rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 16px #00ff8855;
+      font-size: 1.35rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px #00ff8855;
       transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
       border: none;
       cursor: pointer;
       outline: none;
       border: 2px solid transparent;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 0 #fff70044;
     }
     .cta-button:focus, .cta-button:hover {
-      transform: scale(1.07);
-      background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
-      box-shadow: 0 6px 24px #00ff8899;
-      border: 2px solid var(--primary);
+      transform: scale(1.09);
+      background: linear-gradient(90deg, var(--accent) 0%, var(--primary) 100%);
+      box-shadow: 0 8px 32px #fff70099;
+      border: 2px solid var(--accent);
+    }
+    .cta-button span {
+      font-size: 1.2em;
+    }
+    .cta-button::before {
+      content: "🔥";
+      font-size: 1.2em;
+      margin-right: 8px;
+      animation: shake 1.5s infinite;
+    }
+    @keyframes shake {
+      0%, 100% { transform: rotate(-2deg);}
+      50% { transform: rotate(6deg);}
+    }
+    .section {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .section p {
+      font-size: 1.18rem;
+      line-height: 1.7;
+      margin: 18px auto;
+      max-width: 800px;
+      color: #eafff3;
+      text-shadow: 0 1px 0 #222;
     }
     ul {
       margin-top: 18px;
       padding-left: 22px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
     li {
-      margin-bottom: 10px;
-      font-size: 1.08rem;
+      margin-bottom: 14px;
+      font-size: 1.13rem;
+      line-height: 1.6;
+      padding-left: 32px;
+      position: relative;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+    }
+    li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-size: 1.2em;
+      top: 0;
     }
     .bonus {
-      background: rgba(0, 255, 136, 0.08);
-      padding: 22px;
-      border: 1.5px solid var(--primary);
-      border-radius: 12px;
-      margin-top: 32px;
-      box-shadow: 0 2px 12px #00ff8822;
+      background: rgba(255, 247, 0, 0.08);
+      padding: 28px;
+      border: 2px solid var(--accent);
+      border-radius: 16px;
+      margin-top: 40px;
+      box-shadow: 0 2px 24px #fff70022;
       animation: fadeIn 1.2s;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .bonus h2 {
+      color: var(--accent);
+      text-shadow: 0 0 12px #fff70055;
     }
     .garantia {
       background: rgba(0, 195, 255, 0.10);
-      padding: 22px;
-      border-radius: 12px;
-      margin-top: 32px;
-      border: 1.5px solid var(--secondary);
-      box-shadow: 0 2px 12px #00c3ff22;
+      padding: 28px;
+      border-radius: 16px;
+      margin-top: 40px;
+      border: 2px solid var(--secondary);
+      box-shadow: 0 2px 24px #00c3ff22;
       animation: fadeIn 1.2s;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .garantia h2 {
       color: var(--secondary);
+      text-shadow: 0 0 12px #00c3ff55;
+    }
+    .garantia-destaque {
+      background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 100%);
+      color: #111;
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 14px 24px;
+      display: inline-block;
+      margin: 18px 0 0 0;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 24px #00c3ff44;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
     }
     .testemunhos {
-      margin-top: 48px;
-      margin-bottom: 24px;
+      margin-top: 56px;
+      margin-bottom: 32px;
+      width: 100%;
+      max-width: 1000px;
     }
     .testemunhos h2 {
       color: var(--primary);
-      margin-bottom: 18px;
+      margin-bottom: 24px;
+      text-align: center;
+      text-shadow: 0 0 12px #00ff8899;
     }
     .testemunho-lista {
       display: flex;
       flex-wrap: wrap;
-      gap: 18px;
+      gap: 32px;
       justify-content: center;
     }
     .testemunho {
-      background: rgba(255,255,255,0.07);
-      border-radius: 12px;
-      padding: 18px 22px;
-      max-width: 320px;
-      box-shadow: 0 2px 12px #00ff8822;
-      font-size: 1.05rem;
+      background: rgba(255,255,255,0.09);
+      border-radius: 16px;
+      padding: 28px 32px;
+      max-width: 340px;
+      box-shadow: 0 2px 24px #00ff8822;
+      font-size: 1.18rem;
       color: #eafff3;
-      border-left: 4px solid var(--primary);
+      border-left: 5px solid var(--primary);
       position: relative;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-align: left;
     }
     .testemunho::before {
       content: "“";
-      font-size: 2.5rem;
+      font-size: 3.2rem;
       color: var(--primary);
       position: absolute;
-      left: 10px; top: -10px;
-      opacity: 0.3;
+      left: 10px; top: -18px;
+      opacity: 0.18;
     }
     .testemunho .nome {
       display: block;
-      margin-top: 12px;
+      margin-top: 18px;
       font-weight: bold;
-      color: var(--secondary);
-      font-size: 1rem;
+      color: var(--accent);
+      font-size: 1.1rem;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
     }
     .faq {
-      margin-top: 48px;
+      margin-top: 56px;
+      width: 100%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .faq h2 {
       color: var(--primary);
-      margin-bottom: 18px;
+      margin-bottom: 24px;
+      text-align: center;
+      text-shadow: 0 0 12px #00ff8899;
     }
     .faq-item {
-      margin-bottom: 18px;
+      margin-bottom: 24px;
       background: rgba(0,255,136,0.06);
-      border-radius: 8px;
-      padding: 14px 18px;
-      border-left: 3px solid var(--primary);
-      box-shadow: 0 1px 6px #00ff8822;
+      border-radius: 10px;
+      padding: 18px 24px;
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 1px 12px #00ff8822;
+      font-size: 1.15rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-align: left;
     }
     .faq-item strong {
       color: var(--primary);
       display: block;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1em;
     }
-    .garantia-destaque {
-      background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
-      color: #111;
-      font-weight: bold;
-      border-radius: 8px;
-      padding: 10px 18px;
-      display: inline-block;
-      margin: 12px 0 0 0;
-      font-size: 1.1rem;
-      box-shadow: 0 2px 12px #00c3ff44;
-      letter-spacing: 1px;
+    @media (max-width: 1200px) {
+      .container { max-width: 98vw; padding: 32px 2vw; }
+      .testemunhos { max-width: 98vw; }
     }
     @media (max-width: 900px) {
-      .container { padding: 24px 4vw; }
-      .topbar { padding: 10px 8px; }
+      .container { padding: 18px 2vw; }
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.3rem; }
+      .hero img { width: 200px; }
+      .preco { font-size: 1.7rem; }
+      .cta-button { font-size: 1.1rem; padding: 12px 18px; }
+      .testemunho { padding: 16px 12px; font-size: 1rem; }
+      .bonus, .garantia, .faq, ul { padding: 16px 2vw; }
     }
     @media (max-width: 700px) {
       .container {
-        padding: 18px 2vw;
-        margin-top: 60px;
+        padding: 8px 1vw;
+        margin-top: 12px;
       }
       h1 {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
       }
       h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
       .hero img {
-        width: 160px;
+        width: 120px;
       }
       .cta-button {
         font-size: 1rem;
-        padding: 12px 18px;
+        padding: 10px 10px;
       }
       .preco {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
       }
       .testemunho-lista {
         flex-direction: column;
         align-items: center;
+      }
+      .bonus, .garantia, .faq, ul {
+        max-width: 98vw;
+        padding: 12px 2vw;
       }
     }
     @keyframes fadeIn {
@@ -274,48 +371,54 @@
   </style>
 </head>
 <body>
-  <div class="topbar">
-    <h1>Engenharia de Prompt</h1>
-    <a class="cta-button" href="https://pay.kiwify.com.br/URdjSAs" target="_blank" aria-label="Comprar eBook Engenharia de Prompt">
-      <span>🔒 Comprar Agora</span>
-    </a>
-  </div>
   <div class="container">
     <div class="hero">
       <h1>Engenharia de Prompt</h1>
-      <p><strong>O Guia Essencial para Dominar a Comunicação com IAs</strong></p>
+      <p style="font-size:1.25rem; color:var(--accent); font-family:'Montserrat',sans-serif; font-weight:700; text-shadow:0 0 12px #fff70055;">
+        O Guia Definitivo para Dominar a Comunicação com Inteligências Artificiais
+      </p>
       <img src="https://i.ibb.co/HD5kYCKz/Chat-GPT-Image-21-de-jul-de-2025-14-27-55.png" alt="Capa do eBook Engenharia de Prompt" />
       <div class="preco">Apenas R$ 29,90</div>
       <a class="cta-button" href="https://pay.kiwify.com.br/URdjSAs" target="_blank" aria-label="Comprar eBook Engenharia de Prompt">
-        <span>🚀 Quero meu acesso agora</span>
+        <span>Quero meu acesso agora</span>
       </a>
     </div>
 
-    <h2>💡 Por que este eBook é diferente?</h2>
-    <p>Você já viu pessoas dominando o ChatGPT, criando conteúdos incríveis, automações e soluções completas — enquanto outras recebem respostas genéricas?</p>
-    <p><strong>A diferença está em <span style="color:#00ff88;">como elas se comunicam com a IA.</span></strong> E é isso que você vai dominar aqui!</p>
+    <div class="section">
+      <h2>💡 Por que este eBook é diferente?</h2>
+      <p>
+        Você já viu pessoas dominando o ChatGPT, criando conteúdos épicos, automações e soluções completas — enquanto outras recebem respostas genéricas?<br>
+        <strong style="color:var(--primary);font-size:1.1em;">A diferença está em <span style="color:var(--accent);">como elas se comunicam com a IA.</span></strong><br>
+        E é isso que você vai dominar aqui!
+      </p>
+    </div>
 
-    <h2>📘 O que você vai aprender:</h2>
-    <ul>
-      <li>✅ Os fundamentos da IA generativa explicados de forma simples</li>
-      <li>✅ Role Prompting, Few-Shot, Chain-of-Thought, Multi-Step Prompting</li>
-      <li>✅ Como criar prompts que funcionam de verdade</li>
-      <li>✅ Aplicações práticas em marketing, programação, educação e mais</li>
-      <li>✅ Construir sua própria biblioteca de prompts reutilizáveis</li>
-      <li>✅ Evitar os principais erros de quem começa</li>
-    </ul>
+    <div class="section">
+      <h2>📘 O que você vai aprender:</h2>
+      <ul>
+        <li>Fundamentos da IA generativa explicados de forma simples e visual</li>
+        <li>Role Prompting, Few-Shot, Chain-of-Thought, Multi-Step Prompting</li>
+        <li>Como criar prompts que funcionam de verdade e geram resultados</li>
+        <li>Aplicações práticas em marketing, programação, educação e mais</li>
+        <li>Construir sua própria biblioteca de prompts reutilizáveis</li>
+        <li>Evitar os principais erros de quem começa</li>
+      </ul>
+    </div>
 
     <div class="bonus">
       <h2>🎁 BÔNUS EXCLUSIVO:</h2>
       <ul>
-        <li>📂 Mini Biblioteca de Prompts prontos para copiar e colar</li>
-        <li>💻 Acesso à Lista de Ferramentas de IA recomendadas</li>
+        <li>Mini Biblioteca de Prompts prontos para copiar e colar</li>
+        <li>Acesso à Lista de Ferramentas de IA recomendadas</li>
+        <li>Checklist para criar prompts perfeitos</li>
       </ul>
     </div>
 
     <div class="garantia">
       <h2>🛡️ Garantia incondicional de 7 dias</h2>
-      <p>Se por qualquer motivo você achar que o conteúdo não é para você, basta um e-mail que devolvemos 100% do seu dinheiro.</p>
+      <p style="font-size:1.08rem;">
+        Se por qualquer motivo você achar que o conteúdo não é para você, basta um e-mail que devolvemos 100% do seu dinheiro.
+      </p>
       <div class="garantia-destaque">Compra 100% Segura e Sem Risco!</div>
     </div>
 
